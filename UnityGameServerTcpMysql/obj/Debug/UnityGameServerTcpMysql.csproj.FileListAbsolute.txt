@@ -1,0 +1,10 @@
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\bin\Debug\UnityGameServerTcpMysql.exe.config
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\bin\Debug\UnityGameServerTcpMysql.exe
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\bin\Debug\UnityGameServerTcpMysql.pdb
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\bin\Debug\ByteBuffer.dll
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\bin\Debug\ByteBuffer.pdb
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\obj\Debug\UnityGameServerTcpMysql.csprojAssemblyReference.cache
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\obj\Debug\UnityGameServerTcpMysql.csproj.CoreCompileInputs.cache
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\obj\Debug\UnityGameServerTcpMysql.csproj.CopyComplete
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\obj\Debug\UnityGameServerTcpMysql.exe
+C:\Users\rafae\OneDrive\Documentos\UnityGameServerTcpMysql\UnityGameServerTcpMysql\UnityGameServerTcpMysql\obj\Debug\UnityGameServerTcpMysql.pdb
