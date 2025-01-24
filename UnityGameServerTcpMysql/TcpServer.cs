@@ -11,9 +11,9 @@ namespace UnityGameServerTcpMysql
         private TcpListener tcpListener;
         private Thread listenerThread;
 
-        public TcpServer(string ipAddress, int port)
+        public TcpServer(int port)
         {
-            tcpListener = new TcpListener(IPAddress.Parse(ipAddress), port);
+            tcpListener = new TcpListener(IPAddress.Any, port);
             listenerThread = new Thread(new ThreadStart(ListenForClients));
         }
 
@@ -21,7 +21,7 @@ namespace UnityGameServerTcpMysql
         {
             tcpListener.Start();
             listenerThread.Start();
-            DebugConsole.Message("Servidor iniciado, esperando por conexões...");
+            DebugConsole.Message("Servidor iniciado: "+Utils.GetPublicIP());
         }
 
         private void ListenForClients()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,10 +16,10 @@ namespace UnityGameServerTcpMysql
         static void Main(string[] args)
         {
             DebugConsole.Message("Iniciando Servidor...");
-            serverIP = Utils.GetPublicIP();
+
             try
             {
-                tcpServer = new TcpServer(serverIP, tcpPort);
+                tcpServer = new TcpServer(tcpPort);
                 tcpServer.Start();
             }
             catch (Exception e)
