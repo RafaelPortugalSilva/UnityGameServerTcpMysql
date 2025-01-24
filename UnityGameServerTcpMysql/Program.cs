@@ -12,6 +12,7 @@ namespace UnityGameServerTcpMysql
         static TcpServer tcpServer;
         static int tcpPort = 7000;
         static string serverIP;
+        static DatabaseManager database = new DatabaseManager();
 
         static void Main(string[] args)
         {
@@ -25,7 +26,20 @@ namespace UnityGameServerTcpMysql
             catch (Exception e)
             {
                 DebugConsole.Message("Error: " + e.Message);
+                DebugConsole.WriteLog();
+                Environment.Exit(0);
             }
+
+           if(database.Init() == "OK")
+           {
+                DebugConsole.Message("Banco de Dados Conecatado Com Sucesso.");
+           }
+            else
+            {
+                DebugConsole.WriteLog();
+                Environment.Exit(0);
+            }
+            
             Console.Read();
         }
 
