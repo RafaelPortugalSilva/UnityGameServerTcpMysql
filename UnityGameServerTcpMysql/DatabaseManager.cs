@@ -17,6 +17,7 @@ namespace UnityGameServerTcpMysql
         string password = "";   // Senha do banco
         string port = "3306";               // Porta do MySQL (3306 é a padrão)
         string sslMode = "None";            // SSL Mode (None, Preferred, etc.)
+        public MySqlConnection Connection { get; private set; }
 
         public string GetConectionString()
         {
@@ -30,17 +31,29 @@ namespace UnityGameServerTcpMysql
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(GetConectionString()))
-                {
-                    connection.Open();
-                    return "OK";
-                }
+                MySqlConnection connection = new MySqlConnection(GetConectionString());
+                connection.Open();
+                Connection = connection;
+                return "OK";
+                
             }
             catch (Exception ex)
             {
                 DebugConsole.Message(ex.Message, InfoType.Error);
                 return "Error";
             }
+        }
+
+        public int GetUserAccountAmount()
+        {
+            int userCount = 0;
+            string query = "SELECT COUNT(*) FROM users";
+            using (MySqlCommand command = new MySqlCommand(query, Connection))
+            {
+                userCount = Convert.ToInt32(command.ExecuteScalar());
+            }
+
+            return userCount;
         }
     }
 }

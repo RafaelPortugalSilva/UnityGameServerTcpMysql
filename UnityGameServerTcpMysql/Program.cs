@@ -33,7 +33,9 @@ namespace UnityGameServerTcpMysql
            if(database.Init() == "OK")
            {
                 DebugConsole.Message("Banco de Dados Conecatado Com Sucesso.");
-           }
+                DebugConsole.Message(string.Format("{0} contas de usuario", database.GetUserAccountAmount()));
+
+            }
             else
             {
                 DebugConsole.WriteLog();
